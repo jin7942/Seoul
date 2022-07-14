@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>memberList</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- start -->
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul></li>
+					<li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- search-bar -->
+	<div class="" style="margin-top: 20px;">
+		<!-- 삭제여부 -->
+		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+			N
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+			<li><a class="dropdown-item" href="#">Y</a></li>
+		</ul>
+		
+		<input type="text" placeholder="검색어 입력" style="border-radius: 20px;" />
+
+		<!-- icons -->
+		<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  			<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+		</svg>
+		<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+		  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+		  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+		</svg>
+	</div>
+
+	<!-- header -->
+	<h2 style="text-align: center; margin-top: 20px;">회원 목록</h2>
+	
+	<!-- table -->	
+	<table class="table table-striped" style="width: 85%; margin: auto; margin-top: 20px;">
+		<!-- table-caption -->
+		<caption>Total :</caption>
+		
+		<!-- table-header -->
+		<tr>
+			<th>Del</th>
+			<th>No</th>
+			<th>생년월일</th>
+			<th>이름</th>
+			<th>나이</th>
+			<th>이메일</th>
+			<th>연락처</th>
+		</tr>
+		
+		<!-- table-body -->
+		<tr>
+			<td>N</td>
+			<td>0</td>
+			<td>010811</td>
+			<td>김진범</td>
+			<td>22</td>
+			<td>abnianb@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>1</td>
+			<td>010811</td>
+			<td>김진범</td>
+			<td>22</td>
+			<td>abnianb@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>2</td>
+			<td>010811</td>
+			<td>김진범</td>
+			<td>22</td>
+			<td>abnianb@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>3</td>
+			<td>010811</td>
+			<td>김진범</td>
+			<td>22</td>
+			<td>abnianb@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>4</td>
+			<td>010811</td>
+			<td>김진범</td>
+			<td>22</td>
+			<td>abnianb@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>5</td>
+			<td>010811</td>
+			<td>김진범</td>
+			<td>22</td>
+			<td>abnianb@naver.com</td>
+			<td>010-1234-1234</td>
+		</tr>
+	</table>
+	
+	<!-- pagination -->
+	<nav aria-label="...">
+		<ul class="pagination pagination-sm justify-content-center">
+			<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<button type="button" class="btn btn-danger" style="float: left;">X</button>
+			</div>
+			<div class="col-6"></div>
+			<div class="col">
+				<button type="button" class="btn btn-primary" style="float: right;">+</button>
+			</div>
+		</div>
+
+		<!-- end -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
