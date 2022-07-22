@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>memberList</title>
-	
-	<!-- bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	
-	<!-- fontawesome-icon -->
-	<script src="https://kit.fontawesome.com/287e3e129e.js" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>memberList</title>
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- fontawesome-icon -->
+<script src="https://kit.fontawesome.com/287e3e129e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,7 +27,9 @@
 
 			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-carrot fa-xl"></i>KJB</h5>
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+						<i class="fa-solid fa-carrot fa-xl"></i>KJB
+					</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 
@@ -51,9 +53,7 @@
 	<!-- 삭제여부 -->
 	<div class="container" style="margin-top: 8%;">
 		<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-primary" for="btnradio1">코드그룹관리</label> 
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"> <label class="btn btn-outline-primary" for="btnradio2">코드관리</label> 
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"> <label class="btn btn-outline-primary" for="btnradio3">회원관리</label>
+			<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-primary" for="btnradio1">코드그룹관리</label> <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"> <label class="btn btn-outline-primary" for="btnradio2">코드관리</label> <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"> <label class="btn btn-outline-primary" for="btnradio3">회원관리</label>
 		</div>
 	</div>
 
@@ -65,26 +65,26 @@
 
 		<!-- table-caption -->
 		<caption style="caption-side: top; text-align: left;">
-				<!-- search-bar -->
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">N</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-					<li><a class="dropdown-item" href="#">Y</a></li>
-				</ul>
+			<!-- search-bar -->
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">N</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				<li><a class="dropdown-item" href="#">Y</a></li>
+			</ul>
 
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Male</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-					<li><a class="dropdown-item" href="#">남</a></li>
-					<li><a class="dropdown-item" href="#">여</a></li>
-				</ul>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Male</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+				<li><a class="dropdown-item" href="#">남</a></li>
+				<li><a class="dropdown-item" href="#">여</a></li>
+			</ul>
 
-				<input type="text" placeholder="검색어 입력" style="border-radius: 20px;" />
+			<input type="text" placeholder="검색어 입력" style="border-radius: 20px;" />
 
-				<!-- icons -->
-				<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+			<!-- icons -->
+			<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
 				</svg>
 
-				<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+			<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
 				  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
 				  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
 				</svg>
@@ -179,20 +179,60 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<button type="button" class="btn btn-danger" style="float: left;">
+				<button type="button" class="btn btn-danger" style="float: left;" data-bs-toggle="modal" data-bs-target="#exampleModal">
 					<i class="fa-solid fa-trash-can"></i>
 				</button>
 			</div>
 			<div class="col-6"></div>
 			<div class="col">
-				<button type="button" class="btn btn-primary" style="float: right;">
+				<button type="button" class="btn btn-primary" style="float: right;" onclick="location.href='./memberRegForm.html'">
 					<i class="fa-solid fa-plus"></i>
 				</button>
 			</div>
 		</div>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">삭제확인</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">삭제하시겠습니까?</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+					<button type="button" class="btn btn-primary" data-bs-target="#exampleModal2" data-bs-toggle="modal">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">삭제확인</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">삭제되었습니다.</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="bg-light text-center text-lg-start fixed-bottom">
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+			© 2020 Copyright: <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
 	<!-- end -->
+
 
 </body>
 </html>
