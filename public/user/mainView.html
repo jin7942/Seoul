@@ -112,7 +112,7 @@
                     </div>
 
                     <div style="text-align: center; margin-top: 20px">
-                        <button type="button" class="btn btn-dark btn-lg">구매하기</button>
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">구매하기</button>
                     </div>
 
                     <div style="text-align: center; margin-top: 20px">
@@ -121,15 +121,41 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">구매확인</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">구매하시겠습니까?</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+					<button type="button" class="btn btn-primary" data-bs-target="#exampleModal2" data-bs-toggle="modal">구매</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <footer class="bg-light text-center text-lg-start fixed-bottom">
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2020 Copyright:
-                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <script></script>
+	<!-- modal -->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">구매확인</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body"> <b>김진범 님</b><br />구매가 완료 되었습니다.</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="location.href='./main.html'">닫기</button>
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="location.href='#'">구매내역 보기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script></script>
     </body>
 </html>
