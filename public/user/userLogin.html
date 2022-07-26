@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>userLogin</title>
+        <title>main</title>
 
         <!-- bootstrap -->
         <link
@@ -25,71 +25,47 @@
     <body>
         <!-- start -->
 
-        <!-- navbar -->
-        <div class="container">
-            <div class="row">
-                <nav class="navbar bg-light fixed-top">
-                    <a class="navbar-brand" href="#">KJB</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <section class="vh-100" style="background-color: #508bfc">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card shadow-2-strong" style="border-radius: 1rem">
+                            <div class="card-body p-5 text-center">
+                                <h3 class="mb-5">Login</h3>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-carrot fa-xl"></i>KJB</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                                    <label for="floatingInput">ID</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="form-check d-flex justify-content-start mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                                    <label class="form-check-label" for="form1Example3"> Remember password </label>
+                                </div>
+
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+
+                                <hr class="my-4" />
+
+                                <div class="col-md-12">
+                                	<button class="btn btn-lg btn-block" style="width: 100%; background-color: #F7E600; margin-top: 10px;">Kakao</button>
+                                	<button class="btn btn-lg btn-block" style="width: 100%; background-color: #EB4435; margin-top: 10px;">Google</button>
+                                	<button class="btn btn-lg btn-block" style="width: 100%; background-color: #1EC800; margin-top: 10px; color: white;">Naver</button>
+                                	<button class="btn btn-lg btn-block" style="width: 100%; background-color: #3b5998; margin-top: 10px; color: white;">Facebook</button>
+                                </div>
+                                
+                            </div>
                         </div>
-
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item h5">
-                                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i><b>김진범 님</b></a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">로그아웃</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">회원가입</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">마이페이지</a></li>
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-			<!-- loginForm -->
-            <div class="row">
-                <div class="col" style="text-align: center; margin-top: 10%">
-                    <h2>로그인</h2>
-
-                    <div class="loginForm">
-                        <form action="" style="width: 50%; margin: auto">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                                <label for="floatingInput">ID</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                                <label for="floatingPassword">Password</label>
-                            </div>
-                            <div class="login-icon" style="margin-top: 10%; cursor: pointer">
-                                <i class="fa-brands fa-facebook fa-2xl"></i>
-                                <i class="fa-brands fa-google fa-2xl"></i>
-                            </div>
-                            <div class="login-bn" style="margin-top: 10%">
-                                <button type="button" class="btn btn-primary btn-lg">로그인</button>
-                            </div>
-                            <div class="login-link" style="margin-top: 5%">
-                                <a href="#" style="color: black">회원가입</a>
-                                <br />
-                                <a href="#" style="color: black">아이디 및 비밀번호 찾기</a>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <script></script>
     </body>
 </html>
