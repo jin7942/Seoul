@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <title>Imperial Bootstrap Template</title>
+        <title>My</title>
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
@@ -42,7 +42,7 @@
                     <ul>
                         <li><a class="nav-link scrollto active" href="#">Home</a></li>
                         <li>
-                            <a class="nav-link scrollto" href="#"><b>김진범</b>님</a>
+                            <a class="nav-link scrollto" href="./userInfo.html"><b>김진범</b>님</a>
                         </li>
                         <li>
                             <a class="nav-link scrollto" href="#">
@@ -68,6 +68,15 @@
             <div class="container" style="margin-top: 10%; margin-bottom: 10%; width: 85%">
                 <div class="row">
                     <div class="col-12">
+                    	<div style="float: left;">
+                    		<form class="d-flex" role="search">
+	                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+	                            <button class="btn btn-outline-dark" type="submit" style="display: inline-block; width: 200px; white-space: nowrap;">
+	                            	검색
+	                            </button>
+                        	</form>
+                    	</div>
+                    	
                         <div style="float: right">
                             <button type="button" class="btn btn-dark">상품등록</button>
                         </div>
@@ -77,7 +86,7 @@
                 <!-- main -->
                 <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 3%">
                     <!-- item -->
-                    <div class="col" style="cursor: pointer">
+                    <div class="col" style="cursor: pointer" onclick="location.href='./mainView.html'">
                         <div class="card">
                             <img src="./template_imperial/assets/img/sample.jpg" class="card-img-top" alt="..." />
                             <div class="card-body">
