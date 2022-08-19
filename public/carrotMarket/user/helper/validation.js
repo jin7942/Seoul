@@ -141,3 +141,10 @@ function handleOnInput(el, maxlength) {
         el.value = el.value.substr(0, maxlength);
     }
 }
+
+// img upload
+const img = document.getElementById('img');
+
+img.addEventListener('change', () => {
+    console.log(img[0]);
+});
