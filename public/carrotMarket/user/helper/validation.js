@@ -1,3 +1,7 @@
+/**
+ * @ 유효성 검사 및 기타 유틸
+ */
+
 // 정규포현식
 const nameRegex = /^[a-zA-Z0-9가-힣]{2,12}$/;
 const idRegex = /^[A-Za-z0-9]{4,12}$/;
@@ -141,10 +145,3 @@ function handleOnInput(el, maxlength) {
         el.value = el.value.substr(0, maxlength);
     }
 }
-
-// img upload
-const img = document.getElementById('img');
-
-img.addEventListener('change', () => {
-    console.log(img[0]);
-});

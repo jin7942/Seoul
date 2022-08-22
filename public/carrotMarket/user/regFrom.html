@@ -22,6 +22,35 @@
         <!-- fontawesome-icon -->
         <script src="https://kit.fontawesome.com/287e3e129e.js" crossorigin="anonymous"></script>
 
+        <style>
+            li {
+                list-style: none;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .upload {
+                width: 200px;
+                height: 200px;
+            }
+
+            .image-preview {
+                width: 1300px;
+                height: 200px;
+                display: flex;
+                gap: 20px;
+            }
+            .image-preview2 {
+                width: 1300px;
+                height: 200px;
+                display: flex;
+                gap: 20px;
+            }
+        </style>
+
         <!-- =======================================================
   * Template Name: Imperial - v5.8.0
   * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
@@ -66,11 +95,38 @@
 
         <main id="main">
             <div class="container" style="margin-top: 10%; margin-bottom: 10%; width: 85%" data-aos="fade-up">
-                <div class="row">
-                    <div class="col">
-                        <input type="file" name="" id="img" multiple="multiple" />
+                <form action="">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-7">
+                            <ul class="list-inline image-preview"></ul>
+                            <ul class="list-inline image-preview2"></ul>
+                            <input type="file" class="real-upload" accept="image/*" required multiple />
+                        </div>
+                        <div class="col"></div>
                     </div>
-                </div>
+                    <div class="row" style="margin-top: 20px" margin="0 auto">
+                        <div class="col"></div>
+                        <div class="col-7">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">상품 제목</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword2" class="form-label">가격</label>
+                                <input type="password" class="form-control text-end" id="exampleInputPassword2" placeholder="(원)" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword3" class="form-label">상품 설명</label>
+                                <input type="password" class="form-control text-end" id="exampleInputPassword3" style="height: 540px" />
+                            </div>
+
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                            <button type="submit" class="btn btn-dark">임시저장</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </form>
             </div>
         </main>
         <!-- End #main -->
@@ -110,5 +166,8 @@
 
         <!-- Template Main JS File -->
         <script src="./template_imperial/assets/js/main.js"></script>
+
+        <!-- My Js File -->
+        <script src="./helper/imgUploader.js"></script>
     </body>
 </html>
