@@ -1,13 +1,13 @@
 /**
  * @ 이미지업로더
  */
+var uploadFiles = [];
 function getImageFiles(e) {
-    const uploadFiles = [];
     const files = e.currentTarget.files;
     const imagePreview = document.querySelector('.image-preview');
     const imagePreview2 = document.querySelector('.image-preview2');
 
-    if ([...files].length >= 7) {
+    if ([...files].length >= 7 || imagePreview.childElementCount + imagePreview2.childElementCount >= 6) {
         alert('이미지는 최대 6개 까지 업로드가 가능합니다.');
         return;
     }
@@ -26,17 +26,13 @@ function getImageFiles(e) {
             reader.onload = (e) => {
                 const preview = createElement(e, file);
 
-                // if (imagePreview.childElementCount >= 3) {
-                //     imagePreview2.appendChild(preview);
-                // } else {
-                //     imagePreview.appendChild(preview);
-                // }
-
                 imagePreview.childElementCount >= 3 ? imagePreview2.appendChild(preview) : imagePreview.appendChild(preview);
             };
+
             reader.readAsDataURL(file);
         }
     });
+    console.log(uploadFiles);
 }
 
 function createElement(e, file) {
@@ -50,6 +46,5 @@ function createElement(e, file) {
 }
 
 const realUpload = document.querySelector('.real-upload');
-const upload = document.querySelector('.upload');
 
 realUpload.addEventListener('change', getImageFiles);
