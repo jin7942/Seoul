@@ -2,12 +2,13 @@
  * @ 이미지업로더
  */
 var uploadFiles = [];
+document.querySelector('.real-upload').addEventListener('change', getImageFiles);
 function getImageFiles(e) {
     const files = e.currentTarget.files;
     const imagePreview = document.querySelector('.image-preview');
     const imagePreview2 = document.querySelector('.image-preview2');
 
-    if ([...files].length >= 7 || imagePreview.childElementCount + imagePreview2.childElementCount >= 6) {
+    if ([...files].length >= 7 || uploadFiles.length >= 6) {
         alert('이미지는 최대 6개 까지 업로드가 가능합니다.');
         return;
     }
@@ -38,13 +39,30 @@ function getImageFiles(e) {
 function createElement(e, file) {
     const li = document.createElement('li');
     const img = document.createElement('img');
+    img.setAttribute('class', 'imgList');
     img.setAttribute('src', e.target.result);
     img.setAttribute('data-file', file.name);
     li.appendChild(img);
 
+    console.log(li);
+
     return li;
 }
 
-const realUpload = document.querySelector('.real-upload');
+function deleteList() {
+    const list = document.querySelectorAll('.imgList');
 
-realUpload.addEventListener('change', getImageFiles);
+    if (list.length > 0) {
+        list.forEach((li) => {
+            li.remove();
+        });
+        uploadFiles = [];
+    } else {
+        alert('삭제할 사진이 없습니다.');
+    }
+    console.group();
+    console.log('========== 삭제 프로세스 ==========');
+    console.log(uploadFiles);
+    console.log(document.querySelectorAll('.imgList'));
+    console.groupEnd();
+}
