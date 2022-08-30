@@ -15,6 +15,12 @@
 
         <!-- Custom styles for this template-->
         <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+
+        <style>
+            select option[value=''][disabled] {
+                display: none;
+            }
+        </style>
     </head>
 
     <body id="page-top">
@@ -377,64 +383,42 @@
                                 <!-- Search-area -->
                                 <div class="card shadow mb-4">
                                     <div class="card-body">
-                                        <button
-                                            class="btn btn-secondary dropdown-toggle"
-                                            type="button"
-                                            id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false"
-                                        >
-                                            N
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Y</a></li>
-                                        </ul>
+                                        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                            <select class="select btn btn-secondary dropdown-toggle">
+                                                <option value="0">N</option>
+                                                <option value="1">Y</option>
+                                            </select>
 
-                                        <button
-                                            class="btn btn-secondary dropdown-toggle"
-                                            type="button"
-                                            id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false"
-                                        >
-                                            Male
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                            <li><a class="dropdown-item" href="#">남</a></li>
-                                            <li><a class="dropdown-item" href="#">여</a></li>
-                                        </ul>
+                                            <select class="select btn btn-secondary dropdown-toggle">
+                                                <option value="" disabled selected>수정일</option>
+                                                <option value="1">N</option>
+                                                <option value="2">Y</option>
+                                            </select>
 
-                                        <input type="text" placeholder="검색어 입력" style="border-radius: 20px" />
+                                            <input type="text" name="" id="" placeholder="시작일" class="" />
+                                            <input type="text" name="" id="" placeholder="종료일" class="" />
 
-                                        <!-- icons -->
-                                        <svg
-                                            style="cursor: pointer"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="20"
-                                            height="20"
-                                            fill="currentColor"
-                                            class="bi bi-search"
-                                            viewBox="0 0 16 16"
-                                        >
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                                            />
-                                        </svg>
+                                            <select class="select btn btn-secondary dropdown-toggle">
+                                                <option value="0">N</option>
+                                                <option value="1">Y</option>
+                                            </select>
 
-                                        <svg
-                                            style="cursor: pointer"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="20"
-                                            height="20"
-                                            fill="currentColor"
-                                            class="bi bi-arrow-clockwise"
-                                            viewBox="0 0 16 16"
-                                        >
-                                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
-                                            <path
-                                                d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"
-                                            />
-                                        </svg>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control bg-light border-0 small"
+                                                    placeholder="Search for..."
+                                                    aria-label="Search"
+                                                    aria-describedby="basic-addon2"
+                                                />
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="button">
+                                                        <i class="fas fa-search fa-sm"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- icons -->
+                                        </form>
                                     </div>
                                 </div>
 
@@ -464,16 +448,18 @@
                                             </caption>
                                             <!-- table-header -->
                                             <tr>
-                                                <th>
-                                                    <input type="checkbox" name="" id="" />
-                                                </th>
-                                                <th>#</th>
-                                                <th>코드그룹 코드</th>
-                                                <th>코드그룹 이름 (한글)</th>
-                                                <th>코드그룹 이름 (영문)</th>
-                                                <th>코드갯수</th>
-                                                <th>등록일</th>
-                                                <th>수정일</th>
+                                                <thead class="table-dark">
+                                                    <td>
+                                                        <input type="checkbox" name="" id="" />
+                                                    </td>
+                                                    <td>#</td>
+                                                    <td>코드그룹 코드</td>
+                                                    <td>코드그룹 이름 (한글)</td>
+                                                    <td>코드그룹 이름 (영문)</td>
+                                                    <td>코드갯수</td>
+                                                    <td>등록일</td>
+                                                    <td>수정일</td>
+                                                </thead>
                                             </tr>
 
                                             <!-- table-body -->
