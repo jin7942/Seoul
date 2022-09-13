@@ -145,3 +145,11 @@ function handleOnInput(el, maxlength) {
         el.value = el.value.substr(0, maxlength);
     }
 }
+
+function chkAll() {
+    const list = document.querySelectorAll('.chkbox');
+
+    for (let i = 0; i < list.length; i++) {
+        list[i].checked = document.getElementById('chkAll').checked ? true : false;
+    }
+}
