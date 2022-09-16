@@ -146,10 +146,8 @@ function handleOnInput(el, maxlength) {
     }
 }
 
-function chkAll() {
-    const list = document.querySelectorAll('.chkbox');
-
-    for (let i = 0; i < list.length; i++) {
-        list[i].checked = document.getElementById('chkAll').checked ? true : false;
-    }
-}
+$("#btnUelete").on("click", function(){
+    const target = documet.getElementById()
+    form.attr("action", goUrlUele).submit();
+   }
+});
