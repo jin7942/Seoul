@@ -145,9 +145,3 @@ function handleOnInput(el, maxlength) {
         el.value = el.value.substr(0, maxlength);
     }
 }
-
-$("#btnUelete").on("click", function(){
-    const target = documet.getElementById()
-    form.attr("action", goUrlUele).submit();
-   }
-});
