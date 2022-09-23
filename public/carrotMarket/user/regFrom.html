@@ -95,39 +95,48 @@
 
         <main id="main">
             <div class="container" style="margin-top: 10%; margin-bottom: 10%; width: 85%" data-aos="fade-up">
-                <form action="">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col-7">
+                <div class="row">
+                    <div class="col"></div>
+                    <!-- img form -->
+                    <div class="col-7">
+                        <h2>상품 등록</h2>
+                        <form action="">
                             <ul class="list-inline image-preview"></ul>
                             <ul class="list-inline image-preview2"></ul>
-                            <input type="file" class="real-upload" accept="image/*" required multiple />
+                            <input type="file" id="imgInput" class="real-upload" accept="image/*" required multiple />
                             <button type="button" id="deleteBtn" class="btn btn-danger" onclick="deleteList()">삭제</button>
-                        </div>
-                        <div class="col"></div>
+                        </form>
                     </div>
-                    <div class="row" style="margin-top: 20px" margin="0 auto">
-                        <div class="col"></div>
-                        <div class="col-7">
+                    <!-- End of img form -->
+                    <div class="col"></div>
+                </div>
+                <div class="row" style="margin-top: 20px" margin="0 auto">
+                    <div class="col"></div>
+                    <div class="col-7">
+                        <!-- item reg form -->
+                        <form action="">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">상품 제목</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                <label for="itemHeader" class="form-label">상품 제목</label>
+                                <input type="email" class="form-control" id="itemHeader" name="itemHeader" aria-describedby="emailHelp" />
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword2" class="form-label">가격</label>
-                                <input type="password" class="form-control text-end" id="exampleInputPassword2" placeholder="(원)" />
+                                <label for="itemPrice" class="form-label">가격</label>
+                                <input type="text" class="form-control text-end" id="itemPrice" name="itemPrice" placeholder="(원)" />
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword3" class="form-label">상품 설명</label>
-                                <input type="text" class="form-control text-end" id="exampleInputPassword3" style="height: 540px" />
+                            <div class="form-group">
+                                <label for="itemDescription">상품설명</label>
+                                <textarea class="form-control" id="itemDescription" name="itemDescription" value="" rows="10"> </textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-dark">Submit</button>
-                            <button type="submit" class="btn btn-dark">임시저장</button>
-                        </div>
-                        <div class="col"></div>
+                            <div class="btnGroup" style="margin-top: 20px">
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                                <button type="submit" class="btn btn-dark">임시저장</button>
+                            </div>
+                        </form>
+                        <!-- End of item reg form -->
                     </div>
-                </form>
+                    <div class="col"></div>
+                </div>
             </div>
         </main>
         <!-- End #main -->

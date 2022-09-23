@@ -51,11 +51,13 @@ function createElement(e, file) {
 
 function deleteList() {
     const list = document.querySelectorAll('.imgList');
+    const imgInput = document.getElementById('imgInput');
 
     if (list.length > 0) {
         list.forEach((li) => {
             li.remove();
         });
+        imgInput.value = '';
         uploadFiles = [];
     } else {
         alert('삭제할 사진이 없습니다.');
